@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+}
+
+/*Header*/
+#body-header {
+  background-image: url("images/Header-background.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.nav {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font: 2em sans-serif;
+}
+.navbar li a {
+  transition: color 1s;
+  transition: border-bottom 2s;
+}
+.navbar li a:hover {
+  border-bottom: 1px solid white;
+  color: lightgray;
+}
+
+#Name {
+  font: 4em sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 253, 250);
+  margin-top: 100px;
+  letter-spacing: 0.1rem;
+}
+
+.social-nav li {
+  font-size: 1em;
+  margin: 10px 20px;
+}
+.social-nav li a i {
+  border-radius: 40%;
+}
+.social-nav li a i:hover {
+  box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+}
