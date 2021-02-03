@@ -1,7 +1,10 @@
 body {
   margin: 0px;
 }
-
+* {
+  margin: 0px;
+  padding: 0px;
+}
 /*Header*/
 #body-header {
   background-image: url("images/Header-background.jpg");
@@ -52,4 +55,39 @@ body {
 }
 .social-nav li a i:hover {
   box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+}
+
+/*About*/
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#my-image {
+  height: 15rem;
+  width: 15rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: solid 4px white;
+  box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+}
+
+#about p {
+  width: 75%;
+  margin: auto;
+  margin-top: 70px;
+  font-size: 1.6em;
+  font-family: sans-serif;
+  background-color: #edfeff;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
 }
