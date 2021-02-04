@@ -57,6 +57,19 @@ body {
   box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
 }
 
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section:nth-child(2n) {
+  background-color: #edfeff;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
 /*About*/
 #about {
   height: auto;
@@ -84,10 +97,73 @@ body {
   margin-top: 70px;
   font-size: 1.6em;
   font-family: sans-serif;
-  background-color: #edfeff;
+  background-color: rgb(255 245 238 / 70%);
 }
 
 .highlight {
   color: red;
   font-weight: bold;
+}
+
+/*Skills*/
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+.skills-display {
+  width: 70%;
+  /*height: 100px;
+  border: 2px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.skill-progress {
+  width: 15rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 1rem;
+  border: 2px black solid;
+  margin: 25px;
+  box-shadow: 6px 5px 5px 2px rgb(19 19 19);
+}
+
+/*Percentage classes*/
+.eighty-five-percent {
+  width: 85%;
+  height: inherit;
+}
+.ninty-percent {
+  width: 90%;
+  height: inherit;
+}
+.forty-percent {
+  width: 40%;
+  height: inherit;
+}
+.skillbar-blue {
+  background-color: #2857a4;
+}
+.skill-name span {
+  color: white;
+  font-size: 1.1rem;
+  margin: 15px;
+}
+.skill-name {
+  padding-top: 3.5px;
+}
+
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
 }
