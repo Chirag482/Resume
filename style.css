@@ -282,3 +282,71 @@ section:nth-child(2n + 1) {
 #contact {
   height: 50000px;
 }
+
+/*Portfolio*/
+.test-speed {
+  background-image: url("images/type.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-block {
+  height: 250px;
+  width: 250px;
+  margin: 40px;
+}
+.project-block:hover {
+  opacity: 0.7;
+}
+.project-block:hover .project-content {
+  display: block;
+}
+.project-content {
+  display: none;
+}
+.source-code {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.source-code a {
+  text-decoration: none;
+  border: 2px solid darkgray;
+}
+.source-code a:active,
+.source-code a:hover {
+  color: red;
+}
+
+.sudoku {
+  background-image: url("images/SUDOKU-Puzzle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.matchmaker {
+  background-image: url("images/matchmaker1.jfif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.instabot {
+  background-image: url("images/instabot.jfif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.resume {
+  background-image: url("images/resume2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-content {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: bolder;
+  font-family: cursive;
+  color: red;
+  background-color: rgb(192, 240, 192, 0.4);
+  text-align: center;
+}
