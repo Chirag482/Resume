@@ -167,3 +167,118 @@ section:nth-child(2n + 1) {
 .skill-progress > div {
   border-radius: 20px 0px 0px 20px;
 }
+
+/*Education*/
+.timeline {
+  position: relative;
+  width: 75%;
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+.timeline-box:nth-child(2n + 1)::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: -11.5%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  z-index: 1;
+}
+
+.timeline-box {
+  width: 40%;
+  left: 5%;
+  margin: 10px;
+  min-height: 150px;
+  position: relative;
+}
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 3px dashed gray;
+  top: 10%;
+  left: 50%;
+}
+
+.timeline-travller {
+  position: sticky;
+  top: 20%;
+  transform: rotate(90deg);
+  font-size: large;
+  z-index: 2;
+}
+
+.timeline-box-heading {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timeline-box-heading-logo-chit {
+  background-image: url("images/chitkara.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  min-width: 50px;
+}
+.timeline-box-heading-logo-lass {
+  background-image: url("images/lass1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  min-width: 50px;
+}
+.timeline-box-heading-logo-ge {
+  background-image: url("images/golden-era.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  margin-right: 5px;
+  min-width: 50px;
+  margin-top: 5px;
+}
+.timeline-box-heading-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+.degree {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2857a4;
+  font-family: "Times New Roman", Times, serif;
+}
+.uni-name {
+  font-size: 1.2em;
+  font: bolder;
+  color: rgb(219, 65, 65);
+}
+.batch {
+  font: 1.1em;
+  font: bolder;
+  color: aqua;
+  font-family: cursive;
+}
+#contact {
+  height: 50000px;
+}
