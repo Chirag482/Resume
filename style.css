@@ -279,9 +279,6 @@ section:nth-child(2n + 1) {
   color: aqua;
   font-family: cursive;
 }
-#contact {
-  height: 50000px;
-}
 
 /*Portfolio*/
 .test-speed {
@@ -349,4 +346,57 @@ section:nth-child(2n + 1) {
   color: red;
   background-color: rgb(192, 240, 192, 0.4);
   text-align: center;
+}
+
+/*Contact*/
+#contact {
+  background: linear-gradient(120deg, rgb(35, 2, 95), purple);
+  margin-bottom: 0px;
+  margin-top: -45px;
+  position: relative;
+}
+
+.form input {
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  border-bottom: 3px white solid;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form button {
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  margin-left: 35%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  padding: 3px;
+}
+.form button:hover {
+  color: red;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-heading {
+  font-weight: 350px;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.location-lines {
+  font-weight: 250px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
