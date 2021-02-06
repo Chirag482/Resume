@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -13,6 +14,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .nav {
   padding-left: 0px;
   text-align: center;
@@ -38,7 +40,7 @@ body {
 }
 
 #Name {
-  font: 4em sans-serif;
+  font: 4rem sans-serif;
   font-weight: bold;
   text-align: center;
   color: rgb(250, 253, 250);
@@ -95,7 +97,7 @@ section:nth-child(2n + 1) {
   width: 75%;
   margin: auto;
   margin-top: 70px;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-family: sans-serif;
   background-color: rgb(255 245 238 / 70%);
 }
@@ -213,6 +215,25 @@ section:nth-child(2n + 1) {
   border: 3px dashed gray;
   top: 10%;
   left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-divider {
+    left: 8.2%;
+  }
+  .timeline-box {
+    left: 12% !important;
+    width: 80%;
+  }
+  /* .timeline-box:nth-child(2n) {
+    left: 12%;
+  } */
+  .timeline-box:nth-child(2n + 1)::after {
+    left: -10%;
+  }
+  html {
+    font-size: 15px;
+  }
 }
 
 .timeline-travller {
@@ -362,7 +383,7 @@ section:nth-child(2n + 1) {
   outline: none;
   background-color: transparent;
   color: white;
-  font-size: 30px;
+  font-size: 1.5rem;
   border-bottom: 3px white solid;
   padding: 10px;
   margin-bottom: 15px;
@@ -373,8 +394,7 @@ section:nth-child(2n + 1) {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
-
-  margin-left: 35%;
+  margin-left: 25%;
   margin-top: 10px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -399,4 +419,77 @@ section:nth-child(2n + 1) {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 5px;
+}
+html {
+  font-size: 15px;
+}
+@media screen and (max-width: 992px) {
+  .navbar li {
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+  }
+  #about p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-header {
+    height: 65vh;
+  }
+  #my-image {
+    height: 13rem;
+    width: 13rem;
+  }
+  #Name {
+    font-size: 3.5rem;
+  }
+  #about p {
+    font-size: 1.3rem;
+  }
+  .navbar li {
+    font-size: 0.8rem;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .navbar li {
+    display: none;
+    margin: 0px;
+  }
+  #body-header {
+    height: 60vh;
+  }
+  #Name {
+    margin-top: 0px;
+    padding-top: 35%;
+    font-size: 2rem;
+  }
+  .social-nav li {
+    font-size: 0.8em;
+    margin: 10px 10px;
+  }
+
+  /* #my-image img {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    border: solid 4px white;
+    box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+  } */
+  #my-image {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: -13vh;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+  .location-lines {
+    font-size: 1.1rem;
+  }
 }
