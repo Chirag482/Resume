@@ -23,7 +23,9 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
 
 //auto fill skills section
 var progressBars = document.querySelectorAll(".skill-progress > div");
-var skillsContainer = document.getElementsByClassName("skills-display");
+var skillsContainer = document.getElementsByClassName("skills-animation");
+var projectsContainer = document.getElementsByClassName("project");
+console.log(projectsContainer);
 window.addEventListener("scroll", checkScroll);
 var animationDone = false;
 console.log(skillsContainer);
@@ -33,14 +35,31 @@ function intialiseBars() {
   }
 }
 intialiseBars();
+
 function checkScroll() {
-  var coordinates = skillsContainer[0].getBoundingClientRect();
-  if (coordinates.top < window.innerHeight) {
+  var coordinatesSkills = skillsContainer[0].getBoundingClientRect();
+  if (coordinatesSkills.top < window.innerHeight) {
     if (!animationDone) {
       animationDone = true;
       fillBars();
     }
   }
+  var projects = document.getElementsByClassName("project");
+  for (var project of projects) {
+    var coordinatesProject = project.getBoundingClientRect();
+    console.log(coordinatesProject);
+    if (coordinatesProject.top < window.innerHeight) {
+      projectAnimation(project);
+    } else {
+      removeProjectAnimation(project);
+    }
+  }
+}
+function removeProjectAnimation(project) {
+  project.className = "project";
+}
+function projectAnimation(project) {
+  project.className = "project project-anim";
 }
 
 function fillBars() {
